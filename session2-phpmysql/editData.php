@@ -1,7 +1,7 @@
 <?php 
     include "config.php";
 
-    $iddata = $_GET['id'];
+    $iddata = base64_decode($_GET['id']);
     $sql = "SELECT * FROM mahasiswa WHERE nim = '$iddata'";
     $query = mysqli_query($connection,$sql);
 

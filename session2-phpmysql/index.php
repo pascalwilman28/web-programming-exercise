@@ -37,8 +37,8 @@
             <td width="20%"><?php echo $jurusan;?></td>
             <td width="20%"><?php echo $alamat;?></td>
             <td width="20%"><?php echo $tgl_lahir;?></td>
-            <td><a href="editData.php?id=<?php echo $nim;?>">Edit</a></td>
-            <td><a href="deleteData.php?id=<?php echo $nim;?>">Delete</a></td>
+            <td><a href="editData.php?id=<?php echo base64_encode($nim);?>">Edit</a></td>
+            <td><a href="deleteData.php?id=<?php echo base64_encode($nim);?>">Delete</a></td>
         </tr>
         <?php };?>
     </table>
